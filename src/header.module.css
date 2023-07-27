@@ -1,0 +1,130 @@
+/* Header Section */
+.header {
+    position: relative;
+    background-color: whitesmoke;
+    top: 0;
+    left: 12%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    left: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Search Input */
+input {
+    padding: 5px;
+    padding-left: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    margin-left: -120px;
+}
+
+input:hover {
+    opacity: 5px;
+}
+
+/* Button */
+.button {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+/* Notification Section */
+.notification {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.notification ul {
+    visibility: hidden;
+}
+
+.notification:hover ul {
+    visibility: visible;
+    padding: 1rem;
+}
+
+/* User Section */
+.user {
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+/* Content Section */
+.p1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content1 {
+    opacity: 0.5;
+    margin-left: 1.5rem;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+.let1 {
+    font-size: 14px;
+    margin-left: 3.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.image4 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.image4 i {
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.content2 {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.let2 {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-left: 3.5rem;
+    color: black;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.notify {
+    display: flex;
+    margin-left: 450px;
+    align-items: center;
+    justify-content: justify;
+}
+
+hr {
+    opacity: 0.5;
+}

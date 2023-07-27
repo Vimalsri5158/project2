@@ -1,0 +1,78 @@
+.content {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    left: 6rem;
+
+}
+
+.main {
+    position: relative;
+    top: 60px;
+    left: 12rem;
+    top: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5px;
+    margin-right: 150px;
+}
+
+
+.cards .card {
+    padding: 20px;
+    text-align: start;
+    justify-content: start;
+    background: yellowgreen;
+    border-radius: 10px;
+    margin: 10px 60px 50px 0px;
+
+}
+
+.cards .card:hover {
+    background-color: maroon;
+    color: white;
+}
+
+.title {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.number {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.icons {
+    font-size: 15px;
+    text-align: end;
+
+    margin-top: -25px;
+    color: grey;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: "black";
+}
+
+.progress {
+    width: 80px;
+    padding-left: 10px;
+    background-color: red;
+}
+
+.chart1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    height: 300px;
+    width: 700px;
+}

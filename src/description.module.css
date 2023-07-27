@@ -1,0 +1,47 @@
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    top: 160%;
+    left: 15%;
+}
+
+.cardcontent {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+
+
+}
+
+.card {
+    padding: 20px;
+    margin: 0px 80px 20px 0px;
+    border-radius: 5px;
+    justify-content: justify;
+    color: white;
+}
+
+.heading {
+    background-color: grey;
+    padding: 16px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    color: maroon;
+    font-weight: bold;
+}
+
+.body {
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.141);
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+}
+
+.body p {
+    padding: 10px;
+}
+
+.section4 {
+    margin-right: 50px;
+}

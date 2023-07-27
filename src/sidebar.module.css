@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+    position: absolute;
+    max-width: 180px;
+    height: 230%;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.608);
+    background-position: center;
+  }
+  
+  .sidebar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: white;
+  }
+  
+  .sidebar header i {
+    transform: rotate(340deg);
+    font-size: 30px;
+  }
+  
+  
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 75px;
+    color: white;
+    font-size: 14px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+  
+  .sidebar ul a:hover {
+    opacity: 0.3;
+    transition: smoothly;
+  }
+  
+  .sidebar ul li ul {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  .sidebar ul li:hover ul {
+    visibility: visible;
+    position: relative;
+    top: -1.5rem;
+    left: 0;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .sidebar ul li:hover ul li a {
+    color: black;
+    line-height: 2rem;
+    font-size: 12px;
+  }
+  
+  hr {
+    opacity: 0.5;
+  }
+  
+  .footer {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 80px;
+    background-color: rgba(42, 46, 165, 0.627);
+  }

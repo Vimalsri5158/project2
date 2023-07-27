@@ -1,0 +1,24 @@
+.container {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    top: 0%;
+    margin-left: 12rem;
+    background-color: rgba(128, 128, 128, 0.141);
+
+}
+
+.head {
+    background-color: grey;
+    padding: 16px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 16px;
+    color: rgba(128, 0, 0, 0.705);
+    font-weight: bold;
+
+}
+.content{
+    float: right;
+    cursor: pointer;
+}
