@@ -21,6 +21,7 @@ const Content = () => {
         </h2>
         <button
           style={{
+            
             backgroundColor: "blue",
             padding: "10px",
             paddingLeft: "2rem",
