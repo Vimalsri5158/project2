@@ -9,10 +9,10 @@ const Dashboard = ({ title, width,image, isAction, children }) => {
         <div className={styles.head}>{title}<span className={styles.content}>{image}</span></div>
         <div
           style={{
-            padding: "16px",
+            padding: "10px"
           }}
         >
-          {children}
+      {children} 
         </div>
       </div>
     </div>

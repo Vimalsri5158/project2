@@ -1,12 +1,21 @@
 .container {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    position: relative;
-    top: 0%;
-    margin-left: 12rem;
+    margin-top: 50px;
+    margin-left: 150px;
     background-color: rgba(128, 128, 128, 0.141);
 
 }
+
+@media only screen and (max-width: 480px) {
+    .container {
+        display: flex;
+    }
+    .chart2{
+        display: none;
+    }
+}
+
 
 .head {
     background-color: grey;

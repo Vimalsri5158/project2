@@ -5,9 +5,8 @@ import userpic from "./images/userpic.jpg";
 const Header = () => {
   return (
     <div className={style.header}>
-      <div className={style.wrapper}>
-        <div className={style.nav}>
-          <div className={style.search}>
+        <nav>
+          <form>
             <input
               type="text"
               placeholder="Search..."
@@ -16,7 +15,7 @@ const Header = () => {
             <button className={style.button}>
               <i className="fas fa-search"></i>
             </button>
-          </div>
+          </form>
           <div className={style.notify}>
             <span className={style.notification}>
               <i
@@ -39,9 +38,8 @@ const Header = () => {
               <ul
                 style={{
                   position: "absolute",
-                  display: "inline-block",
-                  width: "15%",
-                  marginTop: "25rem",
+                  width: "300px",
+                  marginTop: "0rem",
                   padding: "10px",
                   backgroundColor: "whitesmoke",
                 }}
@@ -50,7 +48,7 @@ const Header = () => {
                   style={{
                     position: "relative",
                     textAlign: "center",
-                    fontSize: "14px",
+                    fontSize: "12px",
                     backgroundColor: "blue",
                     marginTop: "0rem",
                     padding: "10px",
@@ -164,17 +162,16 @@ const Header = () => {
                 style={{
                   position: "absolute",
                   
-                  width: "15%",
-                  marginTop: "25rem",
+                  width: "300px",
+                  marginTop: "0rem",
                   backgroundColor: "whitesmoke",
                 }}
               >
                 <li
                   style={{
                     position: "relative",
-                    display:'inline-block',
                     textAlign: "center",
-                    fontSize: "14px",
+                    fontSize: "12px",
                     backgroundColor: "blue",
                     padding: "10px",
                     fontWeight: "bold",
@@ -289,7 +286,7 @@ const Header = () => {
               justifyContent: "center",
             }}
           >
-            <div style={{marginTop:'20px'}}>
+            <div style={{marginTop:'12px'}}>
               <span >
                 <a
                   href="user"
@@ -305,9 +302,8 @@ const Header = () => {
             <div
               className={style.user}
               style={{
-                justifyContent: "center",
-                marnTop: "-5px",
-                position: "relative",
+                padding:'5px'
+                
               }}
             >
               <span>
@@ -315,9 +311,8 @@ const Header = () => {
               </span>
             </div>
           </div>
+          </nav>
         </div>
-      </div>
-    </div>
   );
 };
 

@@ -1,9 +1,17 @@
 .container {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    top: 160%;
-    left: 15%;
+    top: 80px;
+    left: 18%;
+}
+
+@media only screen and (max-width: 1080px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    
 }
 
 .cardcontent {
@@ -43,5 +51,5 @@
 }
 
 .section4 {
-    margin-right: 50px;
+    padding-right: 280px;
 }

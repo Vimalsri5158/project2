@@ -40,9 +40,9 @@ const Content = () => {
 
       <div className={style.main}>
         <div className={style.cards}>
-          <div className={style.card} style={{ backgroundColor: "lightgreen" }}>
+          <div className={style.card} style={{borderLeft: '0.25rem solid blue'}}>
             <div className={style.cardcontent}>
-              <div className={style.title}>EARNINGS (MONTHLY)</div>
+              <div className={style.title} style={{color:'blue'}}>EARNINGS (MONTHLY)</div>
               <div className={style.number}>$40,000</div>
               <div className={style.icons}>
                 <i class="fas fa-calendar fa-2x"></i>
@@ -50,9 +50,9 @@ const Content = () => {
             </div>
           </div>
 
-          <div className={style.card} style={{ backgroundColor: "skyblue" }}>
+          <div className={style.card} style={{ borderLeft: '0.25rem solid green' }}>
             <div className={style.cardcontent}>
-              <div className={style.title}>EARNINGS (ANNUAL)</div>
+              <div className={style.title} style={{color:'green'}}>EARNINGS (ANNUAL)</div>
               <div className={style.number}>$215,000</div>
               <div className={style.icons}>
                 <i class="fas fa-dollar-sign fa-2x"></i>
@@ -60,9 +60,9 @@ const Content = () => {
             </div>
           </div>
 
-          <div className={style.card} style={{ backgroundColor: "lightgrey" }}>
+          <div className={style.card} style={{ borderLeft: '0.25rem solid red' }}>
             <div className={style.cardcontent}>
-              <div className={style.title}>TASKS</div>
+              <div className={style.title} style={{color:'red'}}>TASKS</div>
               <div className={style.number}>
                 <label for="file">50%</label>
                 <progress
@@ -81,10 +81,10 @@ const Content = () => {
 
           <div
             className={style.card}
-            style={{ backgroundColor: "greenyellow" }}
+            style={{  borderLeft: '0.25rem solid orange' }}
           >
             <div className={style.cardcontent}>
-              <div className={style.title}>PENDING REQUESTS</div>
+              <div className={style.title} style={{color:'orange'}}>PENDING REQUESTS</div>
               <div className={style.number}>18</div>
               <div className={style.icons}>
                 <i class="fas fa-comments fa-2x"></i>
@@ -95,18 +95,20 @@ const Content = () => {
       </div>
       <div
         style={{
-          
-          display: "flex",
-          flexWrap: "nowrap",
-          padding: "24px",
+          display:'flex',
+          padding: "14px",
           top: "50%",
+          left: "50%",
+          marginLeft:'40px',
+          marginBottom:'40px',
         }}
-        className="container-fluid"
+        className="container"
+    
       >
         <Dashboard
           title={"Earning Overview"}
           image={<i class="fa-solid fa-ellipsis-vertical"></i>}
-          width={"col-12 col-sm-12 col-md-12 "}
+          width={"col-12 col-sm-12 col-md-8 "}
         >
           <div className={style.chart1}>
             <LineChart />
@@ -115,12 +117,13 @@ const Content = () => {
         <Dashboard 
         title={"Revenue Sources"} 
         image={<i class="fa-solid fa-ellipsis-vertical"></i>}
-        width={"col-12"}>
+        width={"col-12 col-sm-12 col-md-4"}>
           <div className={style.chart2}>
             <DoughnutChart />
           </div>
         </Dashboard>
       </div>
+      
     </>
   );
 };

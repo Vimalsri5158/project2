@@ -1,130 +1,102 @@
-/* Header Section */
+/* header.module.css */
 .header {
+    background-color: rgba(128, 128, 128, 0.141);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    top: 0px;
+    margin-left: 180px;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    margin-right: 5px;
+    padding: 5px;
+    border: none;
+}
+
+.button {
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    padding: 5px;
+}
+
+.notification {
     position: relative;
-    background-color: whitesmoke;
-    top: 0;
-    left: 12%;
+    margin-right: 20px;
+}
+
+.notification sup {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.notification ul {
+    position: absolute;
+    display: none;
+    width: 15%;
     padding: 10px;
+    background-color: whitesmoke;
     border-radius: 5px;
 }
 
-.header .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    left: 1.5rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-/* Search Input */
-input {
-    padding: 5px;
-    padding-left: 50px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: none;
-    margin-left: -120px;
-}
-
-input:hover {
-    opacity: 5px;
-}
-
-/* Button */
-.button {
-    padding: 5px;
-    background-color: blue;
-    color: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: none;
-}
-
-/* Notification Section */
-.notification {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-.notification ul {
-    visibility: hidden;
-}
-
 .notification:hover ul {
-    visibility: visible;
-    padding: 1rem;
+    display: block;
 }
 
-/* User Section */
-.user {
+  /* Additional styles for message center */
+.message-center {
+    margin-left: 10px;
+}
+.content1{
     text-align: center;
-    padding: 10px;
+    color: grey;
+    font-size: 12px;
+    margin-top: -30px;
+    padding-bottom: 15px;
 
 }
+.let1{
+    font-size: 12px;
+    text-align: center;
+}
 
-
-/* Content Section */
-.p1 {
-    background-color: blue;
-    color: white;
+.content2{
     text-align: center;
     font-size: 12px;
-    padding: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    margin-top: -30px;
 }
-
-.content1 {
-    opacity: 0.5;
-    margin-left: 1.5rem;
+.let2{
+    color: grey;
     font-size: 12px;
-    color: black;
-    cursor: pointer;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
-.let1 {
-    font-size: 14px;
-    margin-left: 3.5rem;
-    color: black;
-    cursor: pointer;
-}
-
-.image4 {
+  /* Additional styles for user section */
+.user-section {
     display: flex;
-    cursor: pointer;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.image4 i {
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
-}
-
-.content2 {
-    font-size: 14px;
-    margin-left: 20px;
-}
-
-.let2 {
-    font-size: 14px;
-    opacity: 0.5;
-    margin-left: 3.5rem;
-    color: black;
-    margin-top: 0px;
-    cursor: pointer;
-}
-
-.notify {
-    display: flex;
-    margin-left: 450px;
-    align-items: center;
-    justify-content: justify;
-}
-
-hr {
-    opacity: 0.5;
+.user-name {
+    color: grey;
+    margin-right: 10px;
 }
