@@ -4,12 +4,12 @@ import styles from "./dashboard.module.css";
 
 const Dashboard = ({ title, width,image, isAction, children }) => {
   return (
-    <div className={width}>
+    <div className={styles.width} style={{marginRight:'50px'}}>
       <div className={`${styles.container}`}>
         <div className={styles.head}>{title}<span className={styles.content}>{image}</span></div>
         <div
           style={{
-            padding: "10px"
+            padding: "20px"
           }}
         >
       {children} 

@@ -1,19 +1,10 @@
 .container {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    margin-top: 50px;
-    margin-left: 150px;
+    margin-top: 0px;
+    margin-left: 0px;
     background-color: rgba(128, 128, 128, 0.141);
-
-}
-
-@media only screen and (max-width: 480px) {
-    .container {
-        display: flex;
-    }
-    .chart2{
-        display: none;
-    }
+    
 }
 
 

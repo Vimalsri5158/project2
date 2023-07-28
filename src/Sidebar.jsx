@@ -9,7 +9,7 @@ const Sidebar = () => {
   return (
     <>
       <div className={style.sidebar}>
-        <header>
+        <div className={style.header}>
           <i
             className="fa-solid fa-laugh-wink fa-4px"
             style={{ color: "white", fontWeight: "bold" }}
@@ -17,7 +17,7 @@ const Sidebar = () => {
           <h2>
             SB ADMIN<sup>2</sup>
           </h2>
-        </header>
+        </div>
         <hr />
         <ul className={style.content1}>
           <li>

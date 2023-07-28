@@ -1,17 +1,19 @@
 /* header.module.css */
-.header {
+header {
     background-color: rgba(128, 128, 128, 0.141);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     top: 0px;
-    margin-left: 180px;
+    position: relative;
+    left: 180px;
+    height: 75px;
     padding: 15px;
+    width: calc(100vw-180px);
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 
 .form-wrapper {

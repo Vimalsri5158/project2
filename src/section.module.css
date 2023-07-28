@@ -4,10 +4,11 @@ body {
 }
 
 .container {
+    position: relative;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    top: 110%;
-    margin-left: 20%;
+    top: 150px;
+    left: 200px;
     display: grid;
     grid-template-columns: repeat(2, 4fr);
 }
@@ -69,11 +70,11 @@ body {
 }
 
 .section3 {
-    padding-Right: 50px;
+    padding-right: 210px;
 }
 
 .section1 {
-    padding-right: 80px;
+    padding-right: 100px;
     margin-bottom: 30px;
 }
 

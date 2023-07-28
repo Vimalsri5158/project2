@@ -8,15 +8,15 @@
   
   .sidebar {
     position: absolute;
-    max-width: 180px;
-    height: 230%;
+    top:0;
+    width: 180px;
     overflow: hidden;
     padding: 20px;
     background-color: rgba(0, 0, 255, 0.608);
     background-position: center;
   }
   
-  .sidebar header {
+  .sidebar .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
     color: white;
   }
   
-  .sidebar header i {
+  .sidebar .header i {
     transform: rotate(340deg);
     font-size: 30px;
   }

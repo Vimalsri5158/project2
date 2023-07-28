@@ -4,7 +4,7 @@ import userpic from "./images/userpic.jpg";
 
 const Header = () => {
   return (
-    <div className={style.header}>
+    <header>
         <nav>
           <form>
             <input
@@ -312,7 +312,7 @@ const Header = () => {
             </div>
           </div>
           </nav>
-        </div>
+        </header>
   );
 };
 

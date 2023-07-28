@@ -9,12 +9,14 @@ import DoughnutChart from "./Charts/Doughnut";
 const Content = () => {
   return (
     <>
+    <div className={style.container}>
       <div className={style.content}>
         <h2
           style={{
             color: "grey",
             fontWeight: "bold",
             fontSize: "25px",
+            paddingRight: "300px",
           }}
         >
           Dashboard
@@ -26,7 +28,6 @@ const Content = () => {
             padding: "10px",
             paddingLeft: "2rem",
             paddingRight: "2rem",
-            marginLeft: "55rem",
             border: "5px",
             borderRadius: "5px",
             color: "white",
@@ -93,14 +94,14 @@ const Content = () => {
           </div>
         </div>
       </div>
+      </div>
       <div
         style={{
           display:'flex',
-          padding: "14px",
-          top: "50%",
-          left: "50%",
-          marginLeft:'40px',
-          marginBottom:'40px',
+          top: "100px",
+          left: "200px",
+          position: "relative",
+
         }}
         className="container"
     
@@ -110,15 +111,16 @@ const Content = () => {
           image={<i class="fa-solid fa-ellipsis-vertical"></i>}
           width={"col-12 col-sm-12 col-md-8 "}
         >
-          <div className={style.chart1}>
+          <div className={style.chart1} style={{display:'flex'}}>
             <LineChart />
           </div>
         </Dashboard>
         <Dashboard 
         title={"Revenue Sources"} 
         image={<i class="fa-solid fa-ellipsis-vertical"></i>}
-        width={"col-12 col-sm-12 col-md-4"}>
-          <div className={style.chart2}>
+        width={"col-12 col-sm-12 col-md-4"}
+        >
+          <div className={style.chart2} >
             <DoughnutChart />
           </div>
         </Dashboard>
